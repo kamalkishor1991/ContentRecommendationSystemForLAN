@@ -1,0 +1,1 @@
+"Content Recommendation System for LAN" folder contain eclipse project directory.It contain all source files, Java Doc of project and JCIFS library. 

@@ -1,0 +1,15 @@
+<html>
+<head>
+<style>
+body{ font-size: 12px; font-family: Arial; }
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+<b>Footer navigation:</b>
+<ol id="new-nav"></ol>
+<script>
+$("#new-nav").load("/ #jq-footerNavigation li");
+</script>
+</body>
+</html>

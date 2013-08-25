@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+li { display:inline ;padding-left:80px}
+
+</style>
+
+</head>
+
+<body id="page2">
+<div id="main">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html" target="mid"></a></li>
+				Recommendation in  <tab>
+		<li class="active"><a href="/recommendation?all"  target="mid">All</a></li>
+		<li><a href="/recommendation?files" target="mid">Files Only</a></li>
+		<li><a href="/recommendation?folders" target="mid">Folders Only</a></li>
+		<li><a href="/recommendation?videos" target="mid">Video</a></li>
+		<li><a href="/recommendation?ebooks" target="mid">e-Books</a></li>
+		<li><a href="/recommendation?music" target="mid">Music</a></li>
+		</ul>
+	</nav>
+	<div class="reco">
+
+	</div>
+	
+</header>
+  <article id="content">
+	<div class="col-1">
+		<div class="p2">
+		
+			<p><br>
+			
+		 </div>
+		
+	</div>
+	
+		
+		
+	</div>
+	
+  </article>
+  <div class="af clear"></div>
+</div>
+<footer>
+	
+</footer>
+<script type="text/javascript">Cufon.now()
+$(function(){
+	$('nav,.more,.header-more').sprites()
+
+	$('.header-slider').gSlider({
+		prevBu:'.hs-prev',
+		nextBu:'.hs-next'
+	})
+	
+	$('a[rel=prettyPhoto]').each(function(){
+		var th=$(this),
+			pb
+		th
+			.append(pb=$('<span class="playbutt"></span>').css({opacity:.7}))
+		pb
+			.bind('mouseenter',function(){
+				$(this)
+					.stop()
+					.animate({opacity:.9})
+			})
+			.bind('mouseleave',function(){
+				$(this)
+					.stop()
+					.animate({opacity:.7})
+			})
+	})
+	.prettyPhoto({theme:'dark_square'})
+})
+</script>
+</body>
+</html>
